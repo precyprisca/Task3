@@ -16,16 +16,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/a"
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginLeft="150dp"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="30dp"
-            android:background="#855D5D"
             android:gravity="center"
-            android:src="@drawable/oge" />
+            android:src="@drawable/oge"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -65,11 +68,11 @@
         android:id="@+id/buttomdivision"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_marginTop="12dp"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/firstdivision">
         
         <LinearLayout
@@ -81,9 +84,9 @@
                 android:id="@+id/playstore"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:layout_marginLeft="30dp"
                 android:src="@drawable/playstore" />
 
             <ImageView
@@ -99,9 +102,9 @@
                 android:id="@+id/bitbucket"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:layout_marginLeft="50dp"
                 android:src="@drawable/bitbucket" />
 
             <ImageView
@@ -124,9 +127,9 @@
                 android:id="@+id/twitter"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:layout_marginLeft="30dp"
                 android:src="@drawable/twitter" />
 
             <ImageView
@@ -142,9 +145,9 @@
                 android:id="@+id/googleplus"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:layout_marginLeft="50dp"
                 android:src="@drawable/googleplus" />
 
             <ImageView
@@ -166,9 +169,9 @@
                 android:id="@+id/dribble"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:layout_marginLeft="30dp"
                 android:src="@drawable/dribble" />
 
             <ImageView
@@ -184,9 +187,9 @@
                 android:id="@+id/email"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:layout_marginLeft="50dp"
                 android:src="@drawable/email" />
 
             <ImageView
@@ -208,9 +211,9 @@
                 android:id="@+id/skype"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:layout_marginLeft="30dp"
                 android:src="@drawable/skype" />
 
             <ImageView
@@ -226,9 +229,9 @@
                 android:id="@+id/android"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:layout_marginLeft="50dp"
                 android:src="@drawable/android" />
 
             <ImageView
